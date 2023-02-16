@@ -20,6 +20,7 @@
         GraphQLPlayground.init(document.getElementById('root'), {
             endpoint: "{{ url(config('graphql-playground.endpoint')) }}",
             subscriptionEndpoint: "{{ config('graphql-playground.subscriptionEndpoint') }}",
+            config : @json(config("graphql-playground.config"))
         })
     })
 </script>
